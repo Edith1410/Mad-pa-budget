@@ -1,0 +1,10 @@
+.opskrifter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.opskrifter img {
+  max-width: 100%;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+}
