@@ -1,6 +1,9 @@
 const cat = new URLSearchParams(window.location.search).get("cat");
 
-const endpoint = `https://dummyjson.com/recipes`;
+const endpoint = `https://dummyjson.com/recipes?category=${cat}&limit=30`;
+
+const h2 = document.querySelector("h2");
+h2.textContent = cat;
 
 const opskrifter = document.querySelector(".opskrifter");
 

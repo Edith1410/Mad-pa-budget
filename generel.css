@@ -8,3 +8,16 @@
   border-bottom: 2px solid black;
   border-radius: 20px;
 }
+#catListeContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  a {
+    padding: 2rem;
+    background-color: rgb(203, 212, 222);
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+  }
+}
