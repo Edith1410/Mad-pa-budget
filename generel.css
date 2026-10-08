@@ -46,22 +46,23 @@ footer {
   margin: 10px;
 }
 header {
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 
   .nav-links {
     display: flex;
     justify-content: flex-end; /* Align everything to the right side */
+    img {
+      max-width: 80px;
+    }
   }
   a {
     text-decoration: none;
     color: inherit;
     text-align: center;
     font-family: FredokaNormal;
-  }
-
-  img {
-    max-width: 80px;
   }
 }
 
