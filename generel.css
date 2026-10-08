@@ -1,3 +1,20 @@
+/* fonts */
+@font-face {
+  font-family: "FredokaNormal";
+  src: url("fonts/Fredoka_Condensed-Regular.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FredokaBold";
+  src: url("fonts/Fredoka_Condensed-SemiBold.woff") format("woff");
+  font-weight: normal;
+}
+
+h1 {
+  font-family: FredokaBold;
+  font-style: bold;
+  color: #1d392c;
+}
 .opskrifter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -6,5 +23,67 @@
 .opskrifter img {
   max-width: 100%;
   border-bottom: 2px solid black;
-  border-radius: 20px;
+}
+#catListeContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  a {
+    padding: 2rem;
+    background-color: rgb(203, 212, 222);
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-family: FredokaNormal;
+  }
+}
+main {
+  background-color: white;
+}
+header,
+footer {
+  background-color: #fff7e9;
+  margin: 10px;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-family: FredokaNormal;
+  }
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+header li {
+  list-style: none;
+}
+button {
+  background-color: #d9744f;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-content: center;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 20px;
+}
+#forside-overskrift {
+  text-align: center;
 }
