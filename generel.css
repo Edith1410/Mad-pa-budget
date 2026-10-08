@@ -6,7 +6,6 @@
 .opskrifter img {
   max-width: 100%;
   border-bottom: 2px solid black;
-  border-radius: 20px;
 }
 #catListeContainer {
   display: grid;
@@ -20,4 +19,48 @@
     color: inherit;
     text-align: center;
   }
+}
+main {
+  background-color: white;
+}
+header,
+footer {
+  background-color: #fff7e9;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+  }
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+header li {
+  list-style: none;
+}
+button {
+  background-color: #d9744f;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-content: center;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 20px;
 }

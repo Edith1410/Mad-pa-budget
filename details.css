@@ -1,0 +1,11 @@
+.Overst-sektion,
+.nederst-sektion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#indgredienser {
+  background-color: #a7c4a0;
+}
+img {
+  max-width: 100%;
+}

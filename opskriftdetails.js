@@ -15,14 +15,31 @@ fetch(endpoint)
 
 function visData(element) {
   console.log(element);
-  produkt.innerHTML = `<a href=productdetails.html?id=${element.id}>
+  const prepTimeTotal = (element.prepTimeMinutes ?? 0) + (element.cookTimeMinutes ?? 0);
+  produkt.innerHTML = `<a href=productdetails.html?id=${element.id}></a>
         <article class="detailview">
+        <section class="Overst-sektion">
+        <div>
         <img src=https://cdn.dummyjson.com/recipe-images/${element.id}.webp alt="produktbillede" />
-            <h2>${element.name}</h2>
-            <h3>${element.ingredients}</h3>
-            <p>kr. ${element.instructions},-</p>
-            <p>${element.difficulty}</p>
-            <p>${element.cuisine}</p>
+        </div>
+        <div>
+            <h1>${element.name}</h1>
+            <p>${element.servings}. Personer</p>
+            <p>${prepTimeTotal}. min</p>
+            <p> 20 kr. pr. person</p>
+            <p>${element.caloriesPerServing} Kalorier pr. servering</p>
+            </div>
+            </section>
+             <section class="nederst-sektion">
+             <div>
+            <h2>Ingredienser:</h2>
+            <ul>${element.ingredients}</ul>
+            </div>
+            <div id="indgredienser">
+            <h2>Fremgangsmåde:</h2>
+            <p>${element.instructions}</p>
+            </div>
+             </section>
         </article>
-        </a>`;
+        `;
 }

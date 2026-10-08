@@ -1,9 +1,9 @@
 const cat = new URLSearchParams(window.location.search).get("cat");
 
-const endpoint = `https://dummyjson.com/recipes?category=${cat}&limit=30`;
+const endpoint = `https://dummyjson.com/recipes`;
 
-const h2 = document.querySelector("h2");
-h2.textContent = cat;
+// const h2 = document.querySelector("h2");
+// h2.textContent = cat;
 
 const opskrifter = document.querySelector(".opskrifter");
 
@@ -21,7 +21,7 @@ function showData(json) {
       <section class="opskrift">
         <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" />
         <h3>${element.name}</h3>
-        <p>${element.cuisine}</p>
+        <button> se opskrift --> </button>
       </section>
        </a>
     `,
