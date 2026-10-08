@@ -33,7 +33,7 @@ function visData(element) {
              <section class="nederst-sektion">
              <div>
             <h2>Ingredienser:</h2>
-            <ul>${element.ingredients}</ul>
+            <ul>${element.ingredients.forEach((ingredient) => `<li>${ingredient}</li>`)}</ul>
             </div>
             <div id="indgredienser">
             <h2>Fremgangsmåde:</h2>

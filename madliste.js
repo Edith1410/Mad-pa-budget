@@ -14,19 +14,16 @@ function getData() {
 }
 
 function showData(json) {
-  opskrifter.innerHTML = json.recipes
-    .map(
-      (element) => `
+  json.recipes.forEach((element) => {
+    opskrifter.innerHTML += `
       <a href=opskriftdetails.html?id=${element.id}>
       <section class="opskrift">
         <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" />
         <h3>${element.name}</h3>
-        <button> se opskrift --> </button>
+        <button> se opskrift -- </button>
       </section>
        </a>
-    `,
-    )
-    .join("");
+    `;
+  });
 }
-
 getData();
