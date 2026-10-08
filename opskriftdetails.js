@@ -1,7 +1,5 @@
 const id = new URLSearchParams(window.location.search).get("id");
 
-console.log("id");
-
 const endpoint = `https://dummyjson.com/recipes/${id}`;
 
 const produkt = document.querySelector("#produkt");
@@ -14,7 +12,7 @@ fetch(endpoint)
   .then(visData);
 
 function visData(element) {
-  console.log(element);
+  //console.log(element);
   const prepTimeTotal = (element.prepTimeMinutes ?? 0) + (element.cookTimeMinutes ?? 0);
   produkt.innerHTML = `<a href=productdetails.html?id=${element.id}></a>
         <article class="detailview">
@@ -33,7 +31,10 @@ function visData(element) {
              <section class="nederst-sektion">
              <div>
             <h2>Ingredienser:</h2>
-            <ul>${element.ingredients.forEach((ingredient) => `<li>${ingredient}</li>`)}</ul>
+            <ul>${element.ingredients.forEach((elm) => {
+              console.log(elm);
+              `<li>${elm}</li>`;
+            })}</ul>
             </div>
             <div id="indgredienser">
             <h2>Fremgangsmåde:</h2>
