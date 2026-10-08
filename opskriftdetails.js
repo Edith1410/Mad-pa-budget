@@ -22,9 +22,9 @@ function visData(element) {
         </div>
         <div>
             <h1>${element.name}</h1>
-            <p>${element.servings}. Personer</p>
-            <p>${prepTimeTotal}. min</p>
-            <p> 20 kr. pr. person</p>
+            <p> <img src="img/person.webp" alt="person" /> ${element.servings}. Personer</p>
+            <p> <img src="img/clock.webp" alt="ur" />${prepTimeTotal}. min</p>
+            <p> <img src="img/money.webp" alt="penge" /> 20 kr. pr. person</p>
             <p>${element.caloriesPerServing} Kalorier pr. servering</p>
             </div>
             </section>
@@ -38,7 +38,9 @@ function visData(element) {
             </div>
             <div id="indgredienser">
             <h2>Fremgangsmåde:</h2>
-            <p>${element.instructions}</p>
+            <ul>${element.instructions.forEach((elm) => {
+              `<li>${elm}</li>`;
+            })}</ul>
             </div>
              </section>
         </article>

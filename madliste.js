@@ -19,8 +19,8 @@ function showData(json) {
       <a href=opskriftdetails.html?id=${element.id}>
       <section class="opskrift">
         <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" />
-        <h3>${element.name}</h3>
-        <button> se opskrift -- </button>
+        <h2>${element.name.toUpperCase()}</h2>
+        <button> se opskrift --> </button>
       </section>
        </a>
     `;
