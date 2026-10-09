@@ -54,9 +54,6 @@ header {
   .nav-links {
     display: flex;
     justify-content: flex-end; /* Align everything to the right side */
-    img {
-      max-width: 80px;
-    }
   }
   a {
     text-decoration: none;
@@ -77,6 +74,17 @@ header ul {
 
 header li {
   list-style: none;
+}
+
+.cusine-button {
+  background-color: #a7c4a0;
+}
+#filtre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 button {
   background-color: #d9744f;
