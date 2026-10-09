@@ -22,7 +22,6 @@ h1 {
 }
 .opskrifter img {
   max-width: 100%;
-  border-bottom: 2px solid black;
 }
 #catListeContainer {
   display: grid;
@@ -33,7 +32,7 @@ h1 {
     padding: 2rem;
     background-color: rgb(203, 212, 222);
     text-decoration: none;
-    color: inherit;
+    color: #1d392c;
     text-align: center;
     font-family: FredokaNormal;
   }
@@ -48,8 +47,14 @@ footer {
 }
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
 
+  .nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align everything to the right side */
+  }
   a {
     text-decoration: none;
     color: inherit;
@@ -70,14 +75,29 @@ header ul {
 header li {
   list-style: none;
 }
+
+.cusine-button {
+  background-color: #a7c4a0;
+}
+#filtre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 button {
   background-color: #d9744f;
+  border: #1d392c solid 1px;
+  color: #1d392c;
+  font-family: FredokaNormal;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
   cursor: pointer;
   align-content: center;
 }
+
 p,
 h1,
 h2,
@@ -86,4 +106,40 @@ h3 {
 }
 #forside-overskrift {
   text-align: center;
+}
+
+.detailview p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.detailview p img {
+  width: 80px; /* adjust to your preferred icon size */
+  height: 80px;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #1d392c;
+  font-family: FredokaNormal;
+}
+
+.opskrift {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.opskrift button {
+  margin-top: auto;
+}
+
+.menu img {
+  max-height: 80px;
+  max-width: 80px;
+}
+.profile {
+  background-color: #a7c4a0;
 }
