@@ -45,14 +45,6 @@ footer {
   background-color: #fff7e9;
   margin: 10px;
 }
-
-p,
-ul,
-ol,
-span {
-  font-family: FredokaNormal;
-  font-size: large;
-}
 header {
   display: grid;
   grid-template-columns: auto 1fr;
