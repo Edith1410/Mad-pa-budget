@@ -37,6 +37,13 @@ h1 {
     font-family: FredokaNormal;
   }
 }
+p,
+ul,
+ol,
+span {
+  font-family: FredokaNormal;
+  font-size: large;
+}
 main {
   background-color: white;
 }
@@ -112,7 +119,7 @@ h2,
 h3 {
   margin: 20px;
 }
-#forside-overskrift {
+.forside-overskrift {
   text-align: center;
 }
 
@@ -150,4 +157,17 @@ a {
 }
 .profile {
   background-color: #a7c4a0;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#like-knap {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  max-height: 80px;
 }
