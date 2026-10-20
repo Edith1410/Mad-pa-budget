@@ -9,3 +9,10 @@
 img {
   max-width: 100%;
 }
+
+@media (max-width: 800px) {
+  .Overst-sektion,
+  .nederst-sektion {
+    grid-template-columns: 1fr;
+  }
+}

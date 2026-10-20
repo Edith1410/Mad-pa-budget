@@ -173,3 +173,23 @@ a {
   right: 0.5rem;
   max-height: 80px;
 }
+@media (max-width: 800px) {
+  header img {
+    max-width: 80px;
+  }
+  #propulæreopskrifter {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .opskrifter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #like-knap {
+    max-width: 60px;
+  }
+  .Overst-sektion,
+  .nederst-sektion {
+    grid-template-columns: 1fr;
+  }
+}
