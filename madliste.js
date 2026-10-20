@@ -39,7 +39,7 @@ function visData(data) {
       <section class="opskrift">
       <article class="card">
        <img id="like-knap" src="img/like.webp" alt="like-knap" />
-        <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" />
+        <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" alt="opskriftbillede"/>
          </article>
         <h2>${element.name.toUpperCase()}</h2>
         <button class="opskrift-button"> se opskrift --> </button>
