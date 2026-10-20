@@ -93,6 +93,8 @@ header li {
 
 .cusine-button {
   background-color: #a7c4a0;
+  color: #1d392c;
+  border: #1d392c solid 1px;
 }
 #filtre {
   display: flex;
@@ -102,9 +104,9 @@ header li {
   flex-wrap: wrap;
 }
 button {
-  background-color: #d9744f;
-  border: #1d392c solid 1px;
-  color: #1d392c;
+  background-color: #fff7e9;
+  border: #c66938 solid 1px;
+  color: #c66938;
   font-family: FredokaNormal;
   padding: 15px;
   margin: 10px;
