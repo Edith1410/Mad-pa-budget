@@ -15,8 +15,9 @@ let alleData, udsnit;
 fetch(endpoint)
   .then((res) => res.json())
   .then((data) => {
-    alleData = udsnit = data.recipes;
-    visData(data);
+    alleData = data.recipes;
+    udsnit = alleData;
+    visData(alleData);
   });
 
 function filtrer(e) {
@@ -36,9 +37,12 @@ function visData(data) {
     opskrifter.innerHTML += `
       <a href=opskriftdetails.html?id=${element.id}>
       <section class="opskrift">
-        <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" />
+      <article class="card">
+       <img id="like-knap" src="img/like.webp" alt="like-knap" />
+        <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" alt="opskriftbillede"/>
+         </article>
         <h2>${element.name.toUpperCase()}</h2>
-        <button> se opskrift --> </button>
+        <button class="opskrift-button"> se opskrift --> </button>
       </section>
        </a>
     `;

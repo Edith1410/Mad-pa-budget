@@ -30,7 +30,7 @@ function visData(recipes) {
     propulæreopskrifter.innerHTML += `
       <a href="opskriftdetails.html?id=${element.id}">
         <section class="opskrift">
-          <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" />
+          <img src="https://cdn.dummyjson.com/recipe-images/${element.id}.webp" alt="opskriftbillede" />
           <h2>${element.name.toUpperCase()}</h2>
           <button>se opskrift --></button>
         </section>

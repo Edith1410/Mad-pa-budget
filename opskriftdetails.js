@@ -32,7 +32,7 @@ function visData(json) {
             <p> <img src="img/person.webp" alt="person" /> ${json.servings}. Personer</p>
             <p> <img src="img/clock.webp" alt="ur" />${prepTimeTotal}. min</p>
             <p> <img src="img/money.webp" alt="penge" /> 20 kr. pr. person</p>
-            <p>${json.caloriesPerServing} Kalorier pr. servering</p>
+            <p> <img src="img/kalorier.webp" alt="kalorier" />${json.caloriesPerServing} Kalorier pr. servering</p>
             </div>
             </section>
              <section class="nederst-sektion">
